@@ -649,25 +649,6 @@ h2 {
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-    .glitch {
-        font-size: 3.5rem;
-    }
-
-    .stats {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        padding-top: 6rem;
-    }
-}
-
 
 .form-wrapper {
     width: 100%;
@@ -869,17 +850,6 @@ h2 {
     transform: translateX(5px);
 }
 
-@media (max-width: 600px) {
-    .form-wrapper {
-        margin: 80px 20px 20px 20px;
-        padding: 2rem;
-    }
-
-    .form-title {
-        font-size: 1.5rem;
-    }
-}
-
 /* --- Footer Styling --- */
 .footer {
     background-color: #111;
@@ -1034,20 +1004,60 @@ h2 {
     font-weight: 500;
 }
 
-/* Mobile Responsiveness */
+
+/* responsive */
+
+
+@media (max-width: 600px) {
+    .form-wrapper {
+        margin: 80px 20px 20px 20px;
+        padding: 2rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
-
+    .glitch {
+        font-size: 3.5rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
+    .section {
+        padding: 5rem 1.5rem;
+    }
+    
+    .member-card {
+        min-width: 240px;
+    }
+       
+    
     .footer-col h4::after {
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .social-links {
-        justify-content: center;
-        display: flex;
     }
 }
